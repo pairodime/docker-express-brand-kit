@@ -1,0 +1,137 @@
+// STANDARD PARALLAX - PASSTHROUGH WINDOW
+.parallax__passthrough-container {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.30) 0%, transparent 50%);
+  }
+  .parallax__passthrough-bkg {
+    position: absolute;
+    background-size: cover !important;
+    width:100%;
+    height:500px;
+    background-position:center top;
+    @media (min-width: $md) {
+      background-attachment: fixed !important;
+    }
+  }
+}
+
+
+// STANDARD PARALLAX INTRO (Just Background)
+.intro-parallax {
+  // Full Screen with Header + Footer Offsets
+  overflow: hidden;
+  padding-bottom: 0px;
+  background-color: black;
+  height: calc(100vh - 60px - 120px);
+  @media (min-width: $sm) {
+    height: calc(100vh - 30px - 94px - 155px)
+  }
+  @media (min-width: $md) {
+    height: calc(100vh - 30px - 115px - 140px)
+  }
+  @media (min-width: $xl) {
+    height: calc(100vh - 30px - 150px - 140px)
+  }
+}
+
+
+// PARRALAX WITH CALL TO ACTION
+.intro-parallax-c2a {
+  // Full Screen with Header + Footer Offsets
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 0px;
+  background-color: black;
+  height: calc(100vh - 60px - 120px);
+  @media (min-width: $sm) {
+    height: calc(100vh - 30px - 94px - 155px)
+  }
+  @media (min-width: $md) {
+    height: calc(100vh - 30px - 115px - 140px)
+  }
+  @media (min-width: $xl) {
+    height: calc(100vh - 30px - 150px - 140px)
+  }
+  // BACKGROUND
+  .intro-parallax-c2a__bkg {
+    width: 100%;
+    height: 100%;
+    background-size: 120%;
+    background-position: center top;
+    background-repeat: no-repeat;
+    @media (max-width: $sm) {
+      background-size: cover;
+    }
+    // set background image inline or via css based on #ID
+  }
+  // CONTENT & CALL TO ACTION
+  .intro-parallax-c2a__content {
+    padding: 0 20px;
+    bottom: 20px;
+    max-width: 520px;
+    z-index: 2;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    position: absolute;
+    text-align: center;
+    @media (min-width: $sm) {
+      visibility: hidden;
+    }
+    #mainContent & h2.heading-leadin {
+      font-family: $sanserif;
+      font-weight: 600;
+      letter-spacing: 1px;
+      color: white;
+      margin-bottom: 20px;
+      display: block;
+      transform-origin: center top;
+      font-size: 70px;
+      line-height: 58px;
+    }
+    p {
+      transform-origin: center top;
+      font-size: 12px;
+      margin: 20px 0;
+      color: white;
+      font-family: $sanserif;
+      font-weight: 100;
+      line-height: 1.35em;
+      font-size: 12px;
+      @media (min-width: $lg) {
+        font-size: 15px;
+      }
+    }
+  }
+  // Down Arrow
+  .continue-down {
+    width: 40px;
+    margin: 0 auto;
+    svg {
+      #boundingBox {
+        fill: none;
+        stroke: #ef5322;
+        stroke-miterlimit: 10;
+      }
+      #arrowLine {
+        fill: none;
+        stroke: #ef5322;
+        stroke-miterlimit: 10;
+      }
+      #arrow {
+        fill: #ef5322;
+      }
+    }
+  }
+}
