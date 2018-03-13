@@ -15,7 +15,7 @@ WORKDIR /node-app
 COPY ./src/package*.json /node-app/
 RUN npm install --production
 # Bower
-COPY ./src/public/javascripts/bower.json /node-app/
+COPY ./src/public/javascripts/bower.json /node-app/public/javascripts/
 WORKDIR /node-app/public/javascripts
 RUN bower install --allow-root
 
