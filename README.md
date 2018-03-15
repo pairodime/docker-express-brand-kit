@@ -1,4 +1,4 @@
-# docker-express-brand-kit
+# DOCKER EXPRESS BRAND KIT
 Docker + NGINX + Node.js + Express + Babel + Gulp + FlexboxGrid + SASS + Lazysizes + Greensock - Brand Stater Kit
 
 REQUIREMENTS
