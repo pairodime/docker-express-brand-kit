@@ -36,7 +36,7 @@ Exit out of the container and restart the NGINX Container Service Gracefully
 
 * `docker kill -s HUP <nginxContainerIdHere>`
 
-## EDITING WEB APP FILES
+## Editing Node Web App Files
 
 Docker will share files between Docker Host and the Docker Container of our Node App
 <location of files - more than likely the /root or /home>/node-app/src/
