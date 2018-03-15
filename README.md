@@ -6,7 +6,7 @@ Docker Engine (Host) - like Docker for Mac or Digital Ocean Docker Droplet or Ub
 * It might be best to just clone this repo into `/home/` on your Docker Host
 
 ## Installation
-With Root privelages run `docker-compose up` This will spin up a container for NGINX and one for our App. Open your browser to `//localhost`
+With Root privelages run `docker-compose up -d` This will spin up a container for NGINX and one for our App. Open your browser to `//localhost`
 
 If this is used in Production or any publicly available URL - you will more than likly need to update the NGINX defaul.conf file which will now be located on your NGINX container -> `/etc/nginx/conf.d/default.conf` with the Docker assigned IP of our node-app container
 
